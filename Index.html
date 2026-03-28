@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+    }.container {
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.heart {
+  font-size: 3rem;
+  animation: heartbeat 1s infinite;
+}
+
+button {
+  background: white;
+  color: #ff6b81;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden-message {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hey Beautiful ❤️</h1>
+    <div class="heart">💖</div><p>
+  Every moment with you feels like my world finally makes sense.
+  Your smile lights up my darkest days, and your presence makes everything softer, warmer, and better.
+</p>
+
+<button onclick="showMessage()">Click Me 💌</button>
+
+<div class="hidden-message" id="message">
+  I don't say this enough, but you mean everything to me. 💖
+</div>
+
+  </div>  <script>
+    function showMessage() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script></body>
+</html>
